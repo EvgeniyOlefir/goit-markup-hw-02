@@ -4,13 +4,14 @@
 /* Черный #000000 */
 /* акцент #2196F3 */
 /* вторичный цвет фона #F5F4FA */
+/* Цвет фона Футера #2F303A */
 
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
-  --black: #000000
-  --white: #FFFFFF
+  --black: #000000;
+  --white: #ffffff;
 }
 
 .page {
@@ -42,6 +43,23 @@
   color: var(--accent-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.auth-nav .link {
+  color: var(--secondary-text-color);
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+
 /* Hero */
 
 .hero-title {
@@ -63,4 +81,64 @@
 /* изменить цвет ссылки на белый */
 .activities-link {
   color: var(--accent-color);
+}
+
+.activities-link:hover,
+.activities-link:focus {
+  color: var(--black);
+}
+
+/* Team */
+.team-section {
+  background-color: #f5f4fa;
+}
+
+.name {
+  color: var(--primary-text-color);
+}
+
+.profession {
+  color: var(--secondary-text-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--accent-color);
+}
+
+/* Clients */
+
+.client-logo:hover,
+.client-logo:focus {
+  color: var(--accent-color);
+}
+
+/* Footer */
+
+.page-footer {
+  background-color: #2f303a;
+  color: var(--white);
+}
+
+.contact-item {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.page-footer .social-link {
+  color: var(--white);
+}
+
+/* Button */
+
+.button {
+  color: var(--primary-text-color);
+}
+
+.button.primary {
+  background-color: var(--accent-color);
+  color: var(--white);
 }
