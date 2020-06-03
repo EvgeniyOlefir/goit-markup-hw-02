@@ -1,16 +1,30 @@
 /* Цвет основного текста #212121 */
 /* Вторичный цвет #757575 */
 /* Белый #FFFFFF */
+/* Черный #000000 */
 /* акцент #2196F3 */
 /* вторичный цвет фона #F5F4FA */
 
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --black: #000000
+  --white: #FFFFFF
+}
+
 .page {
   background-color: #ffffff;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .logo {
-  color: #000000;
+  color: var(--black);
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
 }
 
 .list {
@@ -20,5 +34,33 @@
 /* Site nav */
 
 .site-nav .link {
-  color: #212121;
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero-title {
+  color: var(--primary-text-color);
+}
+
+/* Section */
+
+.section-title {
+  color: var(--primary-text-color);
+}
+
+/* Block */
+
+.block-title {
+  color: var(--primary-text-color);
+}
+
+/* изменить цвет ссылки на белый */
+.activities-link {
+  color: var(--accent-color);
 }
