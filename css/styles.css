@@ -12,19 +12,34 @@
   --accent-color: #2196f3;
   --black: #000000;
   --white: #ffffff;
+  --font-family: Raleway, Roboto, sans-serif;
 }
 
 .page {
   background-color: #ffffff;
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
 }
+
+/* Logo */
 
 .logo {
   color: var(--black);
+  font-family: Raleway, sans-serif;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .logo:hover,
 .logo:focus {
+  color: var(--accent-color);
+}
+
+.logo-web {
   color: var(--accent-color);
 }
 
@@ -36,6 +51,11 @@
 
 .site-nav .link {
   color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -49,6 +69,11 @@
 
 .auth-nav .link {
   color: var(--secondary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
 }
 
 .auth-nav .link:hover,
@@ -64,6 +89,14 @@
 
 .hero-title {
   color: var(--primary-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Section */
@@ -141,4 +174,16 @@
 .button.primary {
   background-color: var(--accent-color);
   color: var(--white);
+}
+
+.botton-portfolio {
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
+}
+
+.botton-portfolio:hover,
+.botton-portfolio:focus {
+  color: var(--white);
+  background-color: var(--accent-color);
+  font-family: inherit;
 }
