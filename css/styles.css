@@ -22,6 +22,14 @@
   letter-spacing: 0.02em;
 }
 
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+
+a {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
 /* Logo */
 
 .logo {
@@ -41,6 +49,12 @@
 
 .logo-web {
   color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+}
+
+.logo-studio {
+  font-family: Raleway, sans-serif;
+  color: var(--white);
 }
 
 .list {
@@ -103,17 +117,44 @@
 
 .section-title {
   color: var(--primary-text-color);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* Block */
 
 .block-title {
   color: var(--primary-text-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* изменить цвет ссылки на белый */
 .activities-link {
-  color: var(--accent-color);
+  color: var(--white);
+  background-color: var(--secondary-text-color);
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .activities-link:hover,
@@ -127,11 +168,20 @@
 }
 
 .name {
-  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .profession {
   color: var(--secondary-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
 .social-link:hover,
@@ -153,12 +203,40 @@
   color: var(--white);
 }
 
+.address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
 .contact-item {
   color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.call {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
 .copyright {
   color: rgba(255, 255, 255, 0.4);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .page-footer .social-link {
@@ -186,4 +264,20 @@
   color: var(--white);
   background-color: var(--accent-color);
   font-family: inherit;
+}
+
+/* Galery */
+
+.galery-subtitle {
+  color: var(--secondary-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.galery-text {
+  color: var(--white);
+  background-color: var(--accent-color);
 }
